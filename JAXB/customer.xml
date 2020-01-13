@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<customer xmlns="http://xml.netbeans.org/schema/customer">
+    
+    
+    <customerid>123456</customerid>     
+    <name>ThanhPC   </name>
+    <address>123 khu CNC</address>
+    <city>hcm</city>
+    <phone>12345678</phone>
+
+
+
+</customer>

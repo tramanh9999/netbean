@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/onlyElements"
+            xmlns="http://xml.netbeans.org/schema/onlyElements"
+            elementFormDefault="qualified">
+    <xsd:element name="person" type="personType">
+    </xsd:element>
+    <xsd:complexType name="personType">
+        <xsd:sequence>
+            <xsd:element name="firstname" type="xsd:string"></xsd:element>
+            <xsd:element name="lastname" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="idcard" type="xsd:string"/>
+    </xsd:complexType>
+</xsd:schema>

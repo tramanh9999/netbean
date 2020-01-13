@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="candidate.xsl"?>
+
+
+
+
+<PEOPLE>
+    <PERSON PERSONID="E01">
+        <NAME>tONY BLAIR</NAME>
+        <ADDRESS>10 DOWNING STREET </ADDRESS>
+        <TEL>(061) 89378329</TEL>
+        <FAX>(061) 89378329</FAX>
+        <EMAIL>BLAIR@EVERYWHERE.COM</EMAIL>
+    </PERSON>
+    <PERSON PERSONID="E02">
+        <NAME>BILL CLINTON</NAME>
+        <ADDRESS>WHITE HOUSE USA</ADDRESS>
+        <TEL>(061) 89378329</TEL>
+        <FAX>(061) 89378329</FAX>
+        <EMAIL>BLC@HERE.COM</EMAIL>
+    </PERSON>
+</PEOPLE>

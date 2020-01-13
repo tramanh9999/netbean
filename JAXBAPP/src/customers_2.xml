@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer xmlns="http://xml.netbeans.org/schema/customers">
+    <customersId>trammnId</customersId>
+    <name>tramsnh</name>
+    <address>thi trans</address>
+    <city>hasnoi</city>
+    <phone>0923949</phone>
+</customer>

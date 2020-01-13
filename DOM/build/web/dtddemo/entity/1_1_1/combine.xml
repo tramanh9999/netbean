@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE purchaseOrder SYSTEM "combine.dtd">
+<purchaseOrder id="D001" account="KhanhKT">
+    <item id="I001" account="KhanhKT">
+        <price>45</price>
+        <quantity>23</quantity>
+        
+    </item>
+    
+     <item account="KhanhKT">
+        <price>2</price>
+        <quantity>2213</quantity>
+        
+    </item>
+    
+    <manufacturer account="M0012">Academic</manufacturer>
+    <purchaser id="P001" account="Khanh">Ltd.</purchaser>
+    <purchaserInfo>
+        <cash>34123</cash>
+    </purchaserInfo>
+</purchaseOrder>
+

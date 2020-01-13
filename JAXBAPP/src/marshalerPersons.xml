@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persons xmlns="http://xml.netbeans.org/persons">
+    <person>
+        <personId>12344</personId>
+        <address>phutho</address>
+        <name>tram anh</name>
+        <city>ha noi</city>
+        <phone>24224512</phone>
+    </person>
+    <person>
+        <personId>435234</personId>
+        <address>thi tran song thao</address>
+        <name>ha nhi</name>
+        <city>hcm</city>
+        <phone>2384812843</phone>
+    </person>
+</persons>

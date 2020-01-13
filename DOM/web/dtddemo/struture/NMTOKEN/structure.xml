@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE RESOURCE[
+<!ELEMENT RESOURCE (Text+)>
+<!ATTLIST RESOURCE SECURITY CDATA "ON"  Authorized_User NMTOKENS #REQUIRED>
+<!ELEMENT Text (#PCDATA)>
+]>
+<RESOURCE Authorized_User="23Khanh KT">
+    <Text>The price of feul is increasing</Text>
+</RESOURCE>

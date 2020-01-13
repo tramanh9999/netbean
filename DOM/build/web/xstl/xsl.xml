@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="firstXSL.xsl"?>
+<CATALOG>
+    <CD>
+        <TITLE>
+            Empire Burlesque
+        </TITLE>    
+        <ARTIST>BOB DYLLAN</ARTIST>
+        <COUNTRY>USA</COUNTRY> 
+        <COMPANY>COLUMBIA</COMPANY>   
+        <PRICE>10.90</PRICE>
+        <YEAR>1985</YEAR>
+    </CD>
+    <CD>
+        <TITLE>
+            Empire Burlesque
+        </TITLE>    
+        <ARTIST>BOB DYLLAN</ARTIST>
+        <COUNTRY>USA</COUNTRY> 
+        <COMPANY>COLUMBIA</COMPANY>   
+        <PRICE>10.90</PRICE>
+        <YEAR>1985</YEAR>
+    </CD>
+</CATALOG>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/group"
+            xmlns="http://xml.netbeans.org/schema/group"
+            elementFormDefault="qualified">
+
+    
+    <xsd:group name="person">
+        <xsd:sequence>
+            <xsd:element name="FirstName" type="xsd:string"/>
+            <xsd:element name="MiddleName" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="LastName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:group>
+    <xsd:attributeGroup name="atrGroupPerson">
+        <xsd:attribute name="Title">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Mr."/>
+                    <xsd:enumeration value="Ms."/>
+                    <xsd:enumeration value="Mrs."/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="BirthYear" type="xsd:gYear"/>
+    </xsd:attributeGroup>
+    
+    <xsd:element name="Book">
+        
+        
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Title" type="xsd:string"/>
+                <xsd:element name="Author" type="authorType"/>
+                <xsd:element name="Illustrator" type="ilusType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="authorType">
+        <xsd:sequence>
+            <xsd:group ref="person"/>
+            <xsd:element name="Specialty">
+                <!--data cua Specialty-->
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="spec">
+                            <xsd:attribute name="id" type="xsd:string"/>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="atrGroupPerson"/>
+    </xsd:complexType>
+    <xsd:complexType name="ilusType">
+        <xsd:group ref="person"/>
+        <xsd:attributeGroup ref="atrGroupPerson"/>
+    </xsd:complexType>
+    
+    
+    <xsd:simpleType name="spec">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Mystery"/>
+            <xsd:enumeration value="Horror"/>
+            <xsd:enumeration value="Chilrens"/>
+            <xsd:enumeration value="Comedy"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

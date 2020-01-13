@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/ultilities/DBUltilities.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/dao/ProductDao.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/AzaudioThread.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/BaseCrawler.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/config/CatagoryEnum.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/MyBossCatagoriesCrawler.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/MyBossEachPageCrawler.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/dao/BaseDao.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/MyBossThread.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/dao/CatagoryDao.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/listenter/MyContextServletListener.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/MyBossCrawler.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/web/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/entities/TblCatagory.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/web/index.html</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/crawler/BaseThread.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/dao/IGenericDao.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/entities/TblProduct.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/CrawlerMachine/src/java/config/AppContant.java</file>
+        </group>
+    </open-files>
+</project-private>

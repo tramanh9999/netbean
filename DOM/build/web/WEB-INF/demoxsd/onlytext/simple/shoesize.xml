@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<shoesize  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://xml.netbeans.org/schema/onlytext_shoesize"
+           xsi:schemaLocation="http://xml.netbeans.org/schema/onlytext_shoesize onlytext_shoesize.xsd"
+           country="vietnam"
+>1</shoesize>

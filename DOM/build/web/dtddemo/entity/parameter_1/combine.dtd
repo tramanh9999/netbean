@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/combine.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE subject SYSTEM "combine.dtd">
+
+    <subject>
+    ...
+    </subject>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT subject (document|results)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT document (title|subjectId|subjectName|prerequisite|classes|assessment|syllabus|textbook|textbooks)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT title (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT subjectId (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT subjectName (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT prerequisite (subjectId|subjectName)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT classes (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT assessment (#PCDATA|result)*>
+<!ATTLIST assessment
+    assessment_type CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT result (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT syllabus (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT textbook (author|booktitle)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT author (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT booktitle (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT textbooks (author|booktitle)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT results (#PCDATA)>

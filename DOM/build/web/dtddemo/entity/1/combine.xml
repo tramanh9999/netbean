@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Addresses[
+
+<!ELEMENT Addresses (Center)+>
+<!ELEMENT Center (Name, Address, Phone)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address EMPTY>
+<!ELEMENT Phone (#PCDATA)>
+
+<!ATTLIST Address id CDATA #REQUIRED>
+<!ENTITY HCM "123 Inovation building">
+<!ENTITY HN "detech">
+<!ENTITY DN "345 dnang">
+
+
+]>
+
+<Addresses>
+    <Center>
+        <Name>300</Name>
+        <Address id="&HN;"></Address>
+        <Phone></Phone>
+    </Center>
+    <Center>
+        <Name>300</Name>
+        <Address id="&HCM;"></Address>
+        <Phone></Phone>
+    </Center>
+    <Center>
+        <Name>300</Name>
+        <Address id="&DN;"></Address>
+        <Phone></Phone>
+    </Center>
+</Addresses>
+

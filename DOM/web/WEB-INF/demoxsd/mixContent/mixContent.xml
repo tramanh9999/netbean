@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xml.netbeans.org/schema/mixContent"
+    xsi:schemaLocation="http://xml.netbeans.org/schema/mixContent mixContent.xsd">
+    hello my name is <name>KhanhKH</name>, my order id is 
+    <orderid>12341</orderid>, and i shipped your load at <shipdate>2001-12-01</shipdate>
+    
+
+</letter>

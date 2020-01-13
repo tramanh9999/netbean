@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT contacts (contact)>
+<!ELEMENT contact (name, location, phone, knows, description)>
+<!ELEMENT name (firstname, middlename, lastname)>
+<!ELEMENT firstname (#PCDATA)> 
+<!ELEMENT middlename (#PCDATA)> 
+<!ELEMENT lastname (#PCDATA)> 
+
+<!ELEMENT location (adresss|(latitude, longitude))>
+<!ELEMENT latitude (#PCDATA)> 
+<!ELEMENT longitude (#PCDATA)> 
+<!ELEMENT address (#PCDATA)>  
+
+
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT knows ( #PCDATA)>
+<!ELEMENT description (#PCDATA|em|br|strong)*>
+<!ELEMENT em (#PCDATA)> 
+<!ELEMENT br EMPTY> 
+<!ELEMENT strong (#PCDATA)> 
+

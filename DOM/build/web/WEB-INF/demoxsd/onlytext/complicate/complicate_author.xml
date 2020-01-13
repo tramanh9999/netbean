@@ -1,0 +1,13 @@
+
+<!--sad-->
+
+
+<Author xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://xml.netbeans.org/schema/complicate_xml_text_only"
+        xsi:schemaLocation="http://xml.netbeans.org/schema/complicate_xml_text_only complicate_xml_text_only.xsd">
+    <Name Pseudonym="true" Homepage="http://www.marktaiwan.com">
+        <FirstName Full="true">Mark Twain</FirstName>
+        <LastName>Twain</LastName>
+    </Name>
+</Author>
+        

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="B012" aval="true">
+        <booktitle>The firm</booktitle>
+        <author>John Graham</author>
+        <price>99</price>
+    </book>
+      <book  id="B012" aval="true">
+        <booktitle>The majersy</booktitle>
+        <author>Lockas</author>
+        <price>9129</price>
+    </book>
+      <book  id="B012" aval="true">
+        <booktitle>Convanding</booktitle>
+        <author>John  bill gasss</author>
+        <price>100</price>
+    </book>
+    
+</library>

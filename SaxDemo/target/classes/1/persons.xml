@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="demo.xsl" type="text/xsl"?>
+<persons>
+    <person>
+        <firstname>Tran</firstname>
+        <middlename>Ha tram</middlename>
+        <lastname>Anh</lastname>
+        <yearold> 22 years old</yearold>
+    </person>
+    <person>
+        <firstname>Ha</firstname>
+        <middlename>Minh</middlename>
+        <lastname>Tuan</lastname>
+        <yearold> 21 years old</yearold>
+    </person>
+    <person>
+        <firstname>Dang</firstname>
+        <middlename>The </middlename>
+        <lastname>pruong</lastname>
+        <yearold> 25 years old</yearold>
+    </person>
+</persons>

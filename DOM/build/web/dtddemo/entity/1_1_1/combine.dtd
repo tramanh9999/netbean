@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!ENTITY % common.attributes 
+
+
+'id    ID    #IMPLIED  
+account   CDATA   #REQUIRED'
+>
+
+<!ELEMENT purchaseOrder (item+, manufacturer, purchaser, purchaserInfo)>
+
+
+<!ATTLIST purchaseOrder %common.attributes;>
+<!ELEMENT item (price, quantity)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+
+<!ATTLIST item %common.attributes; >
+
+<!ELEMENT manufacturer (#PCDATA) >
+<!ATTLIST manufacturer  %common.attributes; >
+
+
+<!ELEMENT purchaser (#PCDATA) >
+<!ATTLIST purchaser  %common.attributes;>
+
+
+
+<!ELEMENT purchaserInfo (cash|check|creditcard) >
+<!ELEMENT check (#PCDATA) >
+<!ELEMENT creditcard EMPTY >
+<!ELEMENT cash ANY >
+
+
+
+
+
+
+
+
+
+

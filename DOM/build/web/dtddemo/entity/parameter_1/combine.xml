@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subject SYSTEM "combine.dtd">
+
+<subject>
+
+    
+<document>
+
+
+    <title>Core XML</title>
+    <title>With java XML</title>
+    <subjectId>495</subjectId>
+    <subjectName>XML</subjectName>
+    <prerequisite>
+        <subjectId>565</subjectId>
+        <subjectName>Java</subjectName>
+    </prerequisite>
+    <classes>435, 456</classes>
+    <assessment assessment_type="exam">Online
+        <result>7</result>
+    </assessment>
+    <syllabus>5/9/2011</syllabus>
+    <textbook>
+        <author>ABV</author>
+        <booktitle>Core XML</booktitle>
+    </textbook>
+    <textbooks>
+        <author>CDF</author>
+        <booktitle>With java XML</booktitle>
+    </textbooks>
+</document>
+<results>7</results>
+</subject>

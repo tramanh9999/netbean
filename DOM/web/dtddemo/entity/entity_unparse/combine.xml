@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE document[
+<!ELEMENT  document (graphics)+>
+<!ELEMENT graphics EMPTY>
+<!ATTLIST graphics image ENTITIES #REQUIRED 
+                    alternative CDATA #IMPLIED>
+                    
+                    <!NOTATION PNG SYSTEM "/usr/local/bin/PNGViewer">
+                    <!NOTATION JPG SYSTEM "/usr/local/bin/JPGViewer">
+<!ENTITY logo SYSTEM "logo.png" NDATA PNG>
+<!ENTITY logojpg SYSTEM "logo.jpg" NDATA JPG>
+<!ENTITY wwwc SYSTEM "world wide web ">
+
+
+]>
+<document>
+    <graphics image="logo" alternative="Logo"></graphics>
+</document>
+

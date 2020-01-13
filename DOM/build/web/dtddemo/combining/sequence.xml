@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE contacts  SYSTEM  "dtd.dtd" >
+<contacts>
+    <contact>
+        <name>
+            <firstname>Josherp</firstname>
+            <middlename>John</middlename>
+            <lastname>Fawcest</lastname>
+        </name>
+        <location>
+            <latitude>12312312.123123123</latitude>
+            <longitude>321123.1231233</longitude>
+        </location>
+        
+        <phone></phone>
+        <knows></knows>
+        <description>
+            Jotaro is  a developer and author of the Begining XML
+            <em>5 edition</em>
+            <br/>
+            Jooshua
+            <strong>loves</strong> XML!
+        </description>
+    </contact>
+</contacts>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT letter (contact+, salutation, paragraph, closing, signature)>
+<!ELEMENT contact (name, address1, address2, city, state, zip, phone, flag)>
+<!ATTLIST contact type CDATA #FIXED "FROM">
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address1 (#PCDATA)>
+<!ELEMENT address2 (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT flag EMPTY >
+<!ATTLIST flag gender CDATA #IMPLIED desp CDATA #IMPLIED>
+<!ELEMENT salutation (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA)>
+<!ELEMENT signature (#PCDATA)>
+<!ELEMENT closing (#PCDATA)>
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<users xmlns:user="user">
+    <user:user username="khanhkt" lastname="Khanh">
+        <password>ktkhanh</password>
+    </user:user>
+    <user:user username="ktkhanh" lastname="kieu">
+        <password>ktkhanh</password>
+    </user:user>
+    <user:user username="tomcat" lastname="tom">
+        <password>tomcat</password>
+    </user:user>  
+    <user:user username="jerry" lastname="case">
+        <password>jerrry</password>
+    </user:user>
+    <user:user username="jotate" lastname="sdf">
+        <password>jotaro</password>
+    </user:user>
+</users>

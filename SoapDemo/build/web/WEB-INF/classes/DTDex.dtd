@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT proper (#PCDATA)>
+<!ATTLIST proper id CDATA #REQUIRED game CDATA #REQUIRED>
+<!ATTLIST proper id CDATA #IMPLIED game CDATA #REQUIRED>

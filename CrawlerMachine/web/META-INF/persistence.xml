@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence verison="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence htt[://xmlns.jcp.org/xml/persistence/persistence_2_1.xsd">
+    
+    <persistence-unit name="TPGamingGearPU" transaction-type="RESOURCE_LOCAL">
+        
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider </provider>
+        <class>entities.TblProduct</class>        
+        <class>entities.TblCatagory</class>        
+        <class>entities.TblDetailProduct</class>        
+        <class>entities.TblUser</class>        
+        <class>entities.TblDetailOrder</class>        
+        <class>entities.TblOrder</class>  
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=TPGamingGear"/>
+            <property name="user" value="sa"/>
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="javax.persistence.jdbc.url" value="13456"/>
+        </properties>           
+    </persistence-unit>
+
+
+</persistence>

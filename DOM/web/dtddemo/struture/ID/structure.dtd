@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT CONFERENCE (Topic)+>
+<!ATTLIST CONFERENCE Date CDATA #REQUIRED>
+<!ELEMENT Topic (#PCDATA) >
+<!ATTLIST Topic TopicID ID #REQUIRED 
+                Previous IDREF #IMPLIED
+                Next IDREF #IMPLIED
+                xRef IDREFS #IMPLIED >
+
+
+
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons xmlns="http://xml.netbeans.org/schema/persons">
+
+    <person>
+        <personId>as234234</personId>
+        <name>Trasdn and</name>
+        <address>quan 11</address>
+        <city>hcm</city>
+        <phone>0283888129</phone>
+    </person>
+     <person>
+        <personId>dfs2312</personId>
+        <name>Emily</name>
+        <address>quan 6</address>
+        <city>hcm</city>
+        <phone>0930222943</phone>
+    </person>
+     <person>
+        <personId>faa21233</personId>
+        <name>Tat vu</name>
+        <address>quan hoan kiem</address>
+        <city>hanoi</city>
+        <phone>0976382771</phone>
+    </person>
+</persons>

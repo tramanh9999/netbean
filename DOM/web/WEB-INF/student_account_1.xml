@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><students name="students">
+
+            asdasd
+
+    <student class="XML" id="1" name="student1">
+        <lastname name="last1">
+            nguyen
+        </lastname>
+        <middlename name="mid1">Cong</middlename>
+        <firstname name="first1">Thanh</firstname>
+        <sex name="sex1">
+            1
+        </sex>
+        <address name="add1">tphcm</address>
+        <password name="pas1">123456</password>
+        <status name="sta1">studying</status>
+    </student>
+    <student class="XML" id="2" name="student2">
+        <lastname name="last2">
+            Tien
+        </lastname>
+        <middlename name="mid2">Nguyen</middlename>
+        <firstname name="first2">thien</firstname>
+        <sex name="sex2">
+            1
+        </sex>
+        <password name="pas2">123456</password>
+        <address name="add2">tphcm</address>
+        <status name="sta2">dropout</status>
+    </student>
+    <student class="XML" id="3" name="student3">
+        <lastname name="last3">
+            Tram
+        </lastname>
+        <password name="pas3">123456</password>
+        <middlename name="mid3">Ha</middlename>
+        <firstname name="first3">Anh</firstname>
+        <sex name="sex3">1</sex>
+        <address name="add3">tphcm</address>
+        <status name="sta3">break</status>
+    </student>
+</students>

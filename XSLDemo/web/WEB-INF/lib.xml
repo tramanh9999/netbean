@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="B01">
+        <booktitle>The firm </booktitle>
+        <author>John Grisham</author>
+        <price>99</price>
+    </book>
+    <book id="B02">
+        <booktitle>Re firmotlte</booktitle>
+        <author>
+            <firstname>Rebbeca</firstname>
+            <lastname> Moorre</lastname>
+        </author>
+        <price>30.1</price>
+    </book>
+    <book id="B03">
+        <booktitle>The firmitive</booktitle>
+        <author>Addiem</author>
+        <price>45.4</price>
+    </book>
+</library>

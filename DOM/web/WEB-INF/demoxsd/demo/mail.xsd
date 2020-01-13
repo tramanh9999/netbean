@@ -1,0 +1,21 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/mail" 
+            xmlns="http://xml.netbeans.org/schema/mail"
+
+            elementFormDefault="qualified">
+    <!-- khai bao element va kieu du lieu -->
+    <xsd:simpleType name="Salary">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:totalDigits value="3"></xsd:totalDigits>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="Employee">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="sal" type="Salary"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+

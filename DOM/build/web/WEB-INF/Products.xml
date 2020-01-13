@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<Products>
+    <Items>
+        <code>A001</code>
+        <name>Coca</name>
+        <price>2 usd</price>
+        <description> a drink</description>
+    </Items>
+     <Items>
+        <code>A002</code>
+        <name>Number 1</name>
+        <price>2 usd</price>
+        <description>best power support drink</description>
+    </Items>
+     <Items>
+        <code>A003</code>
+        <name>Pepsi</name>
+        <price>2 usd</price>
+        <description>Best drink of year</description>
+    </Items>
+    
+
+</Products>

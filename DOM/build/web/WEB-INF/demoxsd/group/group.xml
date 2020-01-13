@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Book
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xml.netbeans.org/schema/group"
+    xsi:schemaLocation="http://xml.netbeans.org/schema/group group.xsd">
+    
+    <Title>Thrill</Title>
+    <Author Title="Mr." BirthYear="1900">
+        <FirstName>Robin</FirstName>
+        <MiddleName>Vande</MiddleName>
+        <LastName>Sa</LastName>
+        <Specialty id="sada">Horror</Specialty>
+    </Author>
+    
+    <Illustrator Title="Ms." BirthYear="1900">
+         <FirstName>Mike</FirstName>
+        <MiddleName>Yonde</MiddleName>
+        <LastName>Ghia</LastName>
+    </Illustrator>
+</Book>

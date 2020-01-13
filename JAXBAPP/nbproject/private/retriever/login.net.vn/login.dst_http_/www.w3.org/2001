@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login->Internet</title>
+    <link rel="shortcut icon" href="https://ex.login.net.vn/static/favicon.ico?v=1.5">
+    <link rel="apple-touch-icon" href="https://ex.login.net.vn/static/apple-touch-icon.png">
+    <meta content="Network Center" name="description">
+    <meta content="Wifi.Center" name="author">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/core.css" />
+    <script src="./css/jquery.slim.min.js"></script>
+    <script src="./css/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var iServer = ['https://ex.login.net.vn', 'https://ext.login.net.vn'];
+        var iRetry = 3;
+        var DeviceInfo = '{"identity":"C5-C6", "mac":"E8:B1:FC:D9:55:44", "ip":"10.0.195.86", "username":"", "link-login":"https://login.net.vn/login?dst=http%3A%2F%2Fwww.w3.org%2F2001", "link-orig":"http://www.w3.org/2001", "error":"", "error-code":"", "chap-id":"", "chap-challenge":"", "link-login-only":"https://login.net.vn/login", "link-orig-esc":"http%3A%2F%2Fwww.w3.org%2F2001", "mac-esc":"E8%3AB1%3AFC%3AD9%3A55%3A44", "istrial":"no", "hostname":"login.net.vn", "server-address":"10.0.0.1:443", "server-name":"hotspot1", "domain":"", "interface-name":"LAN", "popup":"true", "session-id":"", "host-ip":"0.0.0.0", "ex-version":"1.0.20190903" }';
+
+        var href;
+        try {
+            if (window.parent && window.parent.location && window.parent.location.href) {
+                href = window.parent.location.href;
+            }
+        } catch (e) {
+        }
+    </script>
+</head>
+
+<body>
+    <div style="position: fixed; top: 0px; left: 0px; right: 0px; background: #FFF; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; height: 50px; display: none" id='js-error'></div>
+    <div style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background: #FFF; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000" id='check_ok'>
+        <style class="cp-pen-styles">body{background:#eee}#circle{position:absolute;left:0;right:0;margin:60px auto;width:320px}.circle{padding:8px;border:8px solid transparent;border-radius:400px;-webkit-animation:left 2s linear infinite;-moz-animation:left 2s linear infinite;-o-animation:left 2s linear infinite;animation:left 2s linear infinite}.one{width:320px;height:320px;-webkit-animation-delay:1s}.two{-webkit-animation-delay:.9s;-moz-animation-delay:.9s;-o-animation-delay:.9s;animation-delay:.9s}.three{-webkit-animation-delay:.8s;-moz-animation-delay:.8s;-o-animation-delay:.8s;animation-delay:.8s}.four{-webkit-animation-delay:.7s;-moz-animation-delay:.7s;-o-animation-delay:.7s;animation-delay:.7s}.five{-webkit-animation-delay:.6s;-moz-animation-delay:.6s;-o-animation-delay:.6s;animation-delay:.6s}.six{-webkit-animation-delay:.5s;-moz-animation-delay:.5s;-o-animation-delay:.5s;animation-delay:.5s}.seven{-webkit-animation-delay:.4s;-moz-animation-delay:.4s;-o-animation-delay:.4s;animation-delay:.4s}.eight{-webkit-animation-delay:.3s;-moz-animation-delay:.3s;-o-animation-delay:.3s;animation-delay:.3s}.nine{-webkit-animation-delay:.2s;-moz-animation-delay:.2s;-o-animation-delay:.2s;animation-delay:.2s}.ten{-webkit-animation-delay:.1s;-moz-animation-delay:.1s;-o-animation-delay:.1s;animation-delay:.1s}@-webkit-keyframes left{0%{border-top:8px solid rgba(0,0,0,.1)}100%{border-top:8px solid #00b7f2}}@-moz-keyframes left{0%{border-top:8px solid rgba(0,0,0,.1)}100%{border-top:8px solid #00b7f2}}@-o-keyframes left{0%{border-top:8px solid rgba(0,0,0,.1)}100%{border-top:8px solid #00b7f2}}@keyframes left{0%{border-top:8px solid rgba(0,0,0,.1)}100%{border-top:8px solid #00b7f2}}</style>
+        <div id="circle">
+        <div class="circle one">
+            <div class="circle two">
+                <div class="circle three">
+                    <div class="circle four">
+                        <div class="circle five">
+                            <div class="circle six">
+                                <div class="circle seven">
+                                    <div class="circle eight">
+                                        <div class="circle nine">
+                                            <div class="circle ten">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="txt_noti" style="display:none;"></div> <noscript>Vui lòng bật javascripts</noscript>
+    </div>
+    <div id='main_page' class="login-block">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-branch posRe displayRow">
+                        <a href="/" class="header__logo containHeaderLogo im_logo">
+                            <img src='./images/logo_imarketing.svg' style="max-width: 100%; max-height: 100%" />
+                        </a>
+                        <div class="displayCol alCenter jfCenter containTitlePage im_title">
+                            <span class="headerSmall customHeaderSmallMobile">ĐĂNG NHẬP ĐỂ SỬ DỤNG INTERNET</span>
+                            <span class="headerLarge">HỆ THỐNG MẠNG INTERNET</span>
+                        </div>
+                        <div class="f1 noneMobile"></div>
+                        <div class="displayRow alCenter containInfoSupport noneMobile">
+                            <div class="containPhoneIcon">
+                                <img src="./images/Phone_icon.svg" class="imgPowered" />
+                            </div>
+                            <a href="tel:0941977677" class="displayCol ml10 alCenter pointer">
+                                <span class="headerSmall">HỖ TRỢ KỸ THUẬT</span>
+                                <span class="headerLarge im_support">0941.977.677</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="general">
+            <div class="container displayRow">
+                <div class="ads--left">
+                    <div class="col-12 noneMobile ">
+                        <img class="imgLeft" src='./images/noti-left.jpg'>
+                    </div>
+                </div>
+                <div class="payment--center" id="payment">
+                    <!--<a href="#{linkGuide}" class="containImageTop" target="_self">
+                        <img style="max-width: 100%" src='./images/noti-top.jpg' />
+                    </a>-->
+                    <div class="contain_main_content">
+                        <div class="payment__title text-center mb-2 col-12" id='title_connect' style='padding-left: 20px; padding-right: 20px'>
+                            <span class="txtInfoAccount">THÔNG TIN TÀI KHOẢN</span>
+                            <div class="displayRow alCenter noneDestop">
+                                <div class="containPhoneIcon">
+                                    <img src="./images/green-phone_icon.svg" class="imgPowered" />
+                                </div>
+                                <div class="displayCol ml10 alCenter">
+                                    <span class="headerSmall" style="color: #000">HỖ TRỢ KỸ THUẬT</span>
+                                    <a href="tel:0941977677" class="headerLarge im_support" style="color: #0BB558">0941.977.677</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning mt10 mlr15 fade show msg-device-banned" role="alert" style="display: none;"><strong class="headerLarge">Thông Báo: </strong><br>Thiết bị của bạn không được hỗ trợ.  <br>Vui lòng liên hệ 0941.977.677 để biết thêm thông tin chi tiết.<br><img src="./images/warning.png" style="width: 100%;"></div>
+                        <form class="payment--form" id="login-user" name="login" action="https://login.net.vn/login" method="post" >
+                            <input type="hidden" name="dst2" value="http://www.w3.org/2001" />
+                            <input type="hidden" name="dst" value="http://www.w3.org/2001">
+                            <input type="hidden" name="popup" value="true">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayCol" id='contain_wificard'>
+                                <!-- <label id='title_wifi_card'>Tài khoản</label> -->
+                                <input type="text" name="username" value='' class="form-control form-custom" placeholder="Tài khoản" autofocus autocapitalize="none" maxlength="20">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayCol mt10" id='contain_id'>
+                                <!-- <label>Mật khẩu</label> -->
+                                <input type="password" name="password" value='' class="form-control form-custom" placeholder="Mật khẩu" maxlength="32">
+                            </div>
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 displayRow mt10 jfEnd ">
+                                <button class="btn btn-primary payment__btn--connect br25" type="submit">Đăng nhập</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="imagePromotion noneDestop mt20 displayBlock">
+                        <img style="max-width: 100%" src='./images/noti-bot.jpg' />
+                    </div>
+                </div>
+                <div class="ads--right">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <!--
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 containInfoService">
+                        <div class="footer__txt text--uppercase font--bold--size mb-2">Điểm bán thẻ Wifi</div>
+                        <p class="lh20 txtAlJustify">
+                        </p>
+                        <div class="footer__txt text--uppercase font--bold--size mb-2">Điều khoản và Quy định sử dụng</div>
+                        <p class="lh20 txtAlJustify">
+                            Liên hệ và hỗ trợ kỹ thuật:<br>
+                            Hotline: <b>#{phoneNumber}</b><br>
+                            Có hỗ trợ truy cập internet bằng thiết bị di động.<br>
+                            Miễn phí lắp đặt ban đầu và trang bị 01 switch cho tất cả các loại thẻ . Băng thông của tất cả các thẻ được áp dụng là băng thông trong nước.
+                        </p>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 containInfoService mb-2">
+                        <div class="footer__txt text--uppercase font--bold--size mb-2">THÔNG TIN DỊCH VỤ WIFI</div>
+                        <p id='infoService' class="lh20 txtAlJustify">
+                            Công ty Cổ phần Công nghệ i-Marketing là một trong những đơn vị tiên phong cung cấp dịch vụ Wi-fi vào Việt Nam. Chúng tôi hiện đang đầu tư cho hệ thống mạng Internet tại các Ký túc xá Sinh viên, chung cư, … Phân phối các sản phẩm chuyên dành cho các hệ thống mạng có dây và không dây. Với đội ngũ chuyên nghiệp, có kinh nghiệm và kỹ năng triển khai các dự án đầu tư lớn, i-Marketing mong muốn cung cấp thiết bị, giải pháp và dịch vụ tốt nhất cho khách hàng.
+                        </p>
+                    </div>
+                </div>
+            -->
+                <div class="row mt-4 pt-4">
+                    <div class="col-12 displayRow jfCenter">
+                        <!-- <img src="images/footer-banner.png" class="img-fluid" alt="" srcset=""> -->
+                        <!-- <iframe
+                id='iframeBannerBottom'
+                scrolling="no"
+                marginwidth="0"
+                marginheight="0"
+                frameborder="0"
+                style="border:0px; vertical-align: bottom;"
+              >
+              </iframe> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <script language="JavaScript">
+        var _0xc15a=["\x6C\x65\x6E\x67\x74\x68","\x2F\x63\x68\x65\x63\x6B\x53\x65\x72\x76\x65\x72\x3F\x63\x6F\x75\x6E\x74\x3D","\x26\x74\x69\x6D\x65\x3D","\x67\x65\x74\x54\x69\x6D\x65","\x26\x69\x6E\x66\x6F\x3D","\x2D","\x72\x65\x70\x6C\x61\x63\x65","\x58\x4D\x4C\x48\x74\x74\x70\x52\x65\x71\x75\x65\x73\x74","\x4D\x69\x63\x72\x6F\x73\x6F\x66\x74\x2E\x58\x4D\x4C\x48\x54\x54\x50","\x74\x69\x6D\x65\x6F\x75\x74","\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x73\x74\x61\x74\x75\x73","\x72\x65\x73\x70\x6F\x6E\x73\x65\x54\x65\x78\x74","\x70\x61\x72\x73\x65","\x64\x61\x74\x61","\x47\x45\x54","\x6F\x70\x65\x6E","\x73\x65\x6E\x64","\x45\x72\x72\x6F\x72\x20\x72\x65\x74\x72\x69\x65\x76\x69\x6E\x67\x20\x64\x61\x74\x61\x20\x66\x69\x6C\x65\x2E\x20\x53\x6F\x6D\x65\x20\x62\x72\x6F\x77\x73\x65\x72\x73\x20\x6F\x6E\x6C\x79\x20\x61\x63\x63\x65\x70\x74\x20\x63\x72\x6F\x73\x73\x2D\x64\x6F\x6D\x61\x69\x6E\x20\x72\x65\x71\x75\x65\x73\x74\x20\x77\x69\x74\x68\x20\x48\x54\x54\x50\x2E","\x73\x74\x72\x69\x6E\x67","\x6D\x61\x69\x6E\x2E\x68\x74\x6D\x6C","\x69\x6E\x64\x65\x78\x4F\x66","\x63\x6F\x6F\x6B\x69\x65","\x65\x78\x52\x75\x6E\x3D","\x52\x75\x6E","\x3B\x20\x70\x61\x74\x68\x3D\x2F","\x65\x78\x4B\x65\x79\x3D","\x44\x65\x76\x69\x63\x65","\x42\x41\x4E\x4E\x45\x44","\x45\x58\x5F\x4C\x4F\x47\x49\x4E","\x42\x55\x53\x59","\x49\x42\x45\x4E\x45\x46\x49\x54","\x44\x61\x74\x61\x5F\x44\x45\x46\x41\x55\x4C\x54\x3A\x20","\x7C","\x55\x52\x4C","\x6C\x6F\x67","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6C\x6F\x67\x69\x6E\x2D\x62\x6C\x6F\x63\x6B","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x62\x6C\x6F\x63\x6B","\x63\x69\x72\x63\x6C\x65","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6E\x6F\x6E\x65","\x63\x68\x65\x63\x6B\x5F\x6F\x6B","\x6D\x73\x67\x2D\x64\x65\x76\x69\x63\x65\x2D\x62\x61\x6E\x6E\x65\x64","\x6C\x6F\x67\x69\x6E\x2D\x75\x73\x65\x72","\x66\x6F\x72\x6D","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x61\x63\x74\x69\x6F\x6E","\x6D\x65\x74\x68\x6F\x64","\x50\x4F\x53\x54","\x69\x6E\x70\x75\x74","\x74\x79\x70\x65","\x68\x69\x64\x64\x65\x6E","\x6E\x61\x6D\x65","\x69\x6E\x66\x6F","\x76\x61\x6C\x75\x65","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x62\x6F\x64\x79","\x73\x75\x62\x6D\x69\x74","\x72\x65\x6D\x6F\x76\x65"];if(iServer!= null&& iServer[_0xc15a[0]]> 0){var countRetry=iRetry;var indexServer=0;function makeReq(){var _0xea34x4=iServer[indexServer];var _0xea34x5= new Date();var _0xea34x6=_0xea34x4+ _0xc15a[1]+ countRetry+ _0xc15a[2]+ _0xea34x5[_0xc15a[3]]()+ _0xc15a[4]+ encodeURIComponent(DeviceInfo[_0xc15a[6]](/\\/g,_0xc15a[5]));var _0xea34x7=(window[_0xc15a[7]])? new XMLHttpRequest(): new ActiveXObject(_0xc15a[8]);_0xea34x7[_0xc15a[9]]= 2500;_0xea34x7[_0xc15a[10]]= function(){if(this[_0xc15a[11]]== 4){if(this[_0xc15a[12]]== 200){var _0xea34x8=JSON[_0xc15a[14]](this[_0xc15a[13]]);myReadData(_0xea34x8[_0xc15a[15]],_0xea34x6)}else {countRetry--;if(countRetry> 0){setTimeout(function(){makeReq()},1000)}else {if(indexServer< iServer[_0xc15a[0]]- 1){indexServer++;countRetry= iRetry;setTimeout(function(){makeReq()},1000)}else {myFormLocal()}}}}};try{_0xea34x7[_0xc15a[17]](_0xc15a[16],_0xea34x6,true);_0xea34x7[_0xc15a[18]]()}catch(e){throw _0xc15a[19]}}if( typeof href=== _0xc15a[20]&& href[_0xc15a[22]](_0xc15a[21])===  -1){makeReq()}};function myReadData(_0xea34x8,_0xea34xa){document[_0xc15a[23]]= _0xc15a[24]+ _0xea34x8[_0xc15a[25]]+ _0xc15a[26];document[_0xc15a[23]]= _0xc15a[27]+ _0xea34x8[_0xc15a[28]]+ _0xc15a[26];switch(_0xea34x8[_0xc15a[25]]){case _0xc15a[29]:{myBanned();break};case _0xc15a[30]:{myFormEx(_0xea34x8.URL,_0xea34x8.Device);break};case _0xc15a[31]:{myFormLocal();break};case _0xc15a[32]:{runiBenefit(_0xea34x8.Device);break};default:{console[_0xc15a[36]](_0xc15a[33]+ _0xea34x8[_0xc15a[25]]+ _0xc15a[34]+ _0xea34x8[_0xc15a[35]]);myFormLocal()}}}function myFormLocal(){document[_0xc15a[40]](_0xc15a[39])[0][_0xc15a[38]][_0xc15a[37]]= _0xc15a[41];document[_0xc15a[43]](_0xc15a[42])[_0xc15a[38]][_0xc15a[37]]= _0xc15a[44];document[_0xc15a[43]](_0xc15a[45])[_0xc15a[38]][_0xc15a[37]]= _0xc15a[44]}function myBanned(){document[_0xc15a[40]](_0xc15a[46])[0][_0xc15a[38]][_0xc15a[37]]= _0xc15a[41];document[_0xc15a[43]](_0xc15a[47])[_0xc15a[38]][_0xc15a[37]]= _0xc15a[44];document[_0xc15a[43]](_0xc15a[42])[_0xc15a[38]][_0xc15a[37]]= _0xc15a[44];document[_0xc15a[43]](_0xc15a[45])[_0xc15a[38]][_0xc15a[37]]= _0xc15a[44]}function myFormEx(_0xea34xe,_0xea34xf){var _0xea34x10=document[_0xc15a[49]](_0xc15a[48]);_0xea34x10[_0xc15a[50]]= _0xea34xe;_0xea34x10[_0xc15a[51]]= _0xc15a[52];var _0xea34x11=document[_0xc15a[49]](_0xc15a[53]);_0xea34x11[_0xc15a[54]]= _0xc15a[55];_0xea34x11[_0xc15a[56]]= _0xc15a[57];_0xea34x11[_0xc15a[58]]= _0xea34xf;_0xea34x10[_0xc15a[59]](_0xea34x11);document[_0xc15a[60]][_0xc15a[59]](_0xea34x10);_0xea34x10[_0xc15a[61]]();_0xea34x10[_0xc15a[62]]()}
+
+        if ('') {
+            var isReject = typeof href === 'undefined';
+            setError("", 'M1', isReject); 
+            // myFormLocal();    
+
+        }
+        function runiBenefit(linkEx) {
+            if (typeof href === 'string' && href.indexOf('main.html') === -1) {
+                var domainLogin = 'https://login.ibenefit.vn';
+                var linkOrig = "http://www.w3.org/2001";
+                var redirectTo = domainLogin;
+                if (linkOrig !== '') {
+                    redirectTo += ('?dst=' + linkOrig)
+                }
+                start({
+                    externalDefault: linkEx,
+                    domainLogin: domainLogin,
+                    redirectTo,
+                });
+            }
+        }
+
+    </script>
+    
+    <script src="https://ex.login.net.vn/static/js/exlogin.min.js"></script>    
+</body>
+
+</html>

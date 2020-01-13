@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+Mô tả thứ tự xuất hiện của các elememt trong 1 element
+//các element ben trong choice chỉ có thể xuất hiện 1 lần trong file xml
+các element bên trong sequence phải xuất hiện đúng thứ tự trong xml
+all thì không quan tâm điều đó, nhưng cũng chỉ cho phép 1 lần 
+-->
+
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/indicator"
+            xmlns="http://xml.netbeans.org/schema/indicator"
+            elementFormDefault="qualified">
+    <xsd:element name="Employee">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="Name" type="nameType"/>
+            <xsd:choice>
+                <xsd:element name="Salary" type="xsd:integer"/>
+                <xsd:element name="Wage" type="xsd:integer"/>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    </xsd:element>
+     <xsd:complexType name="nameType">
+        <xsd:sequence>
+            <xsd:element name="FirstName" type="xsd:string"/>
+            <xsd:element name="LastName" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

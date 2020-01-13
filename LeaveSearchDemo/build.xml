@@ -1,0 +1,17 @@
+<xsl:template match="/putinbox">
+    <xsl:apply-template select="box" mode ="last"/>
+    <xsl:apply-template select="box" mode ="middle"/>
+    <xsl:apply-template select="box" mode ="first"/>
+</xsl:template>
+<xsl:template match="box" mode="last">Cat is</xsl:template>
+<xsl:template match="box" mode="first">in the</xsl:template>
+<xsl:template match="box" mode="middle">box</xsl:template>
+
+
+
+<putinbox>
+    <box></box>
+</putinbox>
+
+
+A.Cat is box in the B.Cat is in the box C.in the D.Cat is

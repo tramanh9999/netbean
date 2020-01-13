@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letter SYSTEM "combine.dtd">
+<letter>
+    <contact type="FROM">
+        <name>  giorno giovani </name>
+        <address1>Italy</address1>
+        <address2>Germany</address2>
+        <city>Rome</city>
+        <state>asd</state>
+        <zip>123123</zip>
+        <phone>2342-3141</phone>
+        <flag desp="male"  />
+    </contact>
+    <contact>
+        <name>  giorno dio </name>
+        <address1>Italy</address1>
+        <address2>Germany</address2>
+        <city>Rome</city>
+        <state>asd</state>
+        <zip>AJDB23</zip>
+        <phone>2342-314-1231</phone>
+        <flag gender="A"  />
+    </contact>
+    <salutation></salutation>
+    <paragraph> Hi son, congratulation on your 20th birth day, im have send 
+        you a gift for a month, guess that would be sent to you soon, 
+        I 'm very happy from the day you was born, You 're my great son,
+        and will be a great man. I'm happy that you 're what you want to be.
+        Finally, happy birth day to my son,Giorno Giovani.
+        19 december 2019.</paragraph>
+        <closing>Sincerly, love you!</closing>
+        <signature>Your father Dio </signature>
+</letter>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xml.netbeans.org/schema/customers"
+    xsi:schemaLocation="http://xml.netbeans.org/schema/customers customers.xsd">
+    <customersId>as123</customersId>
+    <name>asdjh trasm</name>
+    <address>pohu thom</address>
+    <city>hanoi</city>
+    <phone>2.1312323</phone>
+</customer>

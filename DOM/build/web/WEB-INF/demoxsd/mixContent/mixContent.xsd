@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.netbeans.org/schema/mixContent"
+            xmlns="http://xml.netbeans.org/schema/mixContent"
+            elementFormDefault="qualified">
+
+    
+    <xsd:element name="letter" type="letterType"/>
+    <xsd:complexType name="letterType" mixed="true">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+                
+            <xsd:element name="orderid" type="xsd:nonNegativeInteger"/>
+               
+            <xsd:element name="shipdate" type="xsd:date"/>
+               
+
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

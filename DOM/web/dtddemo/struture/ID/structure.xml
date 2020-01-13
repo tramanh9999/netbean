@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CONFERENCE SYSTEM "structure.dtd">
+<CONFERENCE Date="September, 05, 2011">
+    <Topic TopicID="Topic_1" Next="Topic_2" xRef="Topic_3 Topic_4">
+        
+        Introduction to jojo bizzare adventure
+    </Topic>
+    <Topic TopicID="Topic_2" Previous="Topic_1" Next="Topic_3" xRef="Topic_1 Topic_3">
+        
+        First step : Jojo taro
+    </Topic>
+    <Topic TopicID="Topic_3"  Previous="Topic_2" Next="Topic_4" xRef="Topic_1 Topic_2">
+        
+        Second : Giovani advance
+    </Topic>
+    <Topic TopicID="Topic_4" Previous="Topic_3"  Next="Topic_5" xRef="Topic_1 Topic_2 Topic_3">
+        
+        Mistar
+    </Topic>
+    <Topic TopicID="Topic_5" Previous="Topic_4" xRef="Topic_1 Topic_2 Topic_3 Topic_4">
+        Dio
+    </Topic>
+
+
+    
+
+
+</CONFERENCE>
